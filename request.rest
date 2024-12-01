@@ -1,0 +1,62 @@
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Nuril",
+    "email": "admin@gamil.com",
+    "password": "123456",
+    "confPassword": "123456",
+    "role": "admin"
+}
+
+###
+// get All Users
+GET http://localhost:5000/users
+
+###
+//Get Single User
+GET http//localhost:5000/users/fa3e8d50-6820-4d67-a23f-70cec172cd52
+
+###
+//Update a User 
+PATCH http//localhost:5000/users/fa3e8d50-6820-4d67-a23f-70cec172cd52
+Content-Type: : application/json
+
+{
+    "name": "Nuril update",
+    "email": "Nuril@gamil.com",
+    "password": "",
+    "confPassword": "",
+    "role": "User"
+}
+
+###
+//delete a user
+DELETE http//localhost:5000/users/fa3e8d50-6820-4d67-a23f-70cec172cd52
+
+###
+POST http://localhost:5000/login
+Content-Type: : application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "123456"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: : application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "123456"
+}
+
+###
+GET http//localhost:5000/me
+
+###
+DE http//localhost:5000/logout
+
+###
+GET http//localhost:5000/products
